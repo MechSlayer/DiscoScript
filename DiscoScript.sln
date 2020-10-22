@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscoScript", "DiscoScript\DiscoScript.csproj", "{4162DFE5-F36D-4B7E-BF46-19F0DACB5167}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscoScript.Core", "DiscoScript.Core\DiscoScript.Core.csproj", "{99E0C602-258D-45F4-AE34-DC7F5B8A1D7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscoScript.Engine", "DiscoScript.Engine\DiscoScript.Engine.csproj", "{A1FAF402-DE15-4117-BCDC-9388AB229D20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscoScript.Common", "DiscoScript.Common\DiscoScript.Common.csproj", "{56BD3729-58C3-431A-BF78-50C9763114C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +18,17 @@ Global
 		{4162DFE5-F36D-4B7E-BF46-19F0DACB5167}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4162DFE5-F36D-4B7E-BF46-19F0DACB5167}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4162DFE5-F36D-4B7E-BF46-19F0DACB5167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99E0C602-258D-45F4-AE34-DC7F5B8A1D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99E0C602-258D-45F4-AE34-DC7F5B8A1D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99E0C602-258D-45F4-AE34-DC7F5B8A1D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99E0C602-258D-45F4-AE34-DC7F5B8A1D7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1FAF402-DE15-4117-BCDC-9388AB229D20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1FAF402-DE15-4117-BCDC-9388AB229D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1FAF402-DE15-4117-BCDC-9388AB229D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1FAF402-DE15-4117-BCDC-9388AB229D20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56BD3729-58C3-431A-BF78-50C9763114C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56BD3729-58C3-431A-BF78-50C9763114C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56BD3729-58C3-431A-BF78-50C9763114C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56BD3729-58C3-431A-BF78-50C9763114C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
