@@ -129,7 +129,7 @@ fragment SingleStringCharacter
     ;
 fragment EscapeSequence
     : CharacterEscapeSequence
-    | '0'
+    | '0' //
     | HexEscapeSequence
     | UnicodeEscapeSequence
     | ExtendedUnicodeEscapeSequence
