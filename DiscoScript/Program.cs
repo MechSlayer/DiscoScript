@@ -37,7 +37,7 @@ namespace DiscoScript
 
         static void RunInterpreter()
         {
-            
+            throw new NotImplementedException();
         }
     }
 }
