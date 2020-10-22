@@ -37,21 +37,7 @@ namespace DiscoScript
 
         static void RunInterpreter()
         {
-            var input = string.Empty;
-
-            var engine = new ScriptEngine();
-            while (input != "salir")
-            {
-                Console.Write(">");
-                input = Console.ReadLine();
-                if (string.IsNullOrWhiteSpace(input))
-                {
-                    Console.WriteLine();
-                    continue;
-                }
-                var result = engine.ExecuteAsync(input!).GetAwaiter().GetResult();
-                Console.WriteLine(result.Result);
-            }
+            
         }
     }
 }

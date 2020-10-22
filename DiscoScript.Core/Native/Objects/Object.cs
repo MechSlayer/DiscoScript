@@ -46,47 +46,10 @@ namespace DiscoScript.Core.Native.Objects
 
             public override string ToString()
             {
-                return new ObjectPrinter().Print(_natives, new List<INative>());
+                return $"{{{string.Join(", ", _natives.Select(p => $"{p.Key}: {p.Value}"))}}}";
             }
 
             public Dictionary<string, INative> GetInternalValue() => _natives;
-
-
-            public class ObjectPrinter
-            {
-                private int _spaces;
-
-                public ObjectPrinter(int spaces = 0)
-                {
-                    _spaces = spaces;
-                }
-                public string Print(Dictionary<string, INative> values, List<INative> visited)
-                {
-                    var pairs = values.ToArray();
-                    var strB = new StringBuilder();
-                    strB.Append("{\n");
-
-                    for (var i = 0; i < pairs.Length; i++)
-                    {
-                        var pair = pairs[i];
-                        strB.Append(new Text(" ") * _spaces);
-                        strB.Append(pair.Key);
-                        strB.Append(": ");
-                        if (visited.Contains(pair.Value))
-                        {
-                            strB.Append("[Circular]".Pastel(Color.DodgerBlue));
-                            continue;
-                        }
-                        if (pair.Value is Object obj) strB.Append(new ObjectPrinter(_spaces + 4).Print(obj._natives, visited));
-                        else strB.Append(pair.Value);
-                        if (i != pairs.Length - 1) strB.Append(",\n");
-                        else strB.Append($"\n{new Text(" ") * (_spaces - 1)}}}");
-                        visited.Add(pair.Value);
-                    }
-                    
-                    return strB.ToString();
-                }
-            }
 
             public INative this[INative key]
             {
